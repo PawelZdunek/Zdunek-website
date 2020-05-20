@@ -1,0 +1,121 @@
+.telefonia-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1300px;
+    padding-top: 120px;
+    margin: auto;
+}
+
+.telefonia-container a{
+    text-decoration: none;
+    margin: 30px;
+    border-radius: 40px;
+    cursor: default;
+}
+
+.telefonia-box{
+    width: 300px;
+    height: 400px;
+    border-radius: 40px;
+    padding: 20px;
+    /* box-shadow: 0 0 20px -10px #333333; */
+    box-shadow: 0 0 20px -5px #333333;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform .3s ease;
+}
+
+.telefonia-box:hover{
+    /* transform: scale(1.05); */
+}
+
+.telefonia-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.telefonia-box:hover::before{
+    /* opacity: 1; */
+}
+
+.telefonia-box-centrala::before{
+    box-shadow: 0 0 20px -5px #092229;
+}
+
+.telefonia-box-ivr::before{
+    box-shadow: 0 0 20px -5px #db2704;
+}
+
+.telefonia-box-konferencja::before{
+    box-shadow: 0 0 20px -5px #02007f;
+}
+
+.telefonia-box-rejestrator::before{
+    box-shadow: 0 0 20px -5px #333f4f;
+}
+
+.telefonia-box-powitania::before{
+    box-shadow: 0 0 20px -5px #385799;
+}
+
+.telefonia-box img{
+    width: 170px;
+    border-radius: 10px;
+}
+
+.telefonia-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 160px;
+    color: #333333;
+    list-style: none;
+}
+
+.telefonia-text li{
+    margin: 2px 0 2px 15px;
+    position: relative;
+}
+
+.telefonia-text li::before{
+    content: '';
+    position: absolute;
+    right: calc(100% + 7px);
+    top: 0%;
+    width: 17px;
+    height: 17px;
+    background-image: url(img/before_icon.png);
+    background-size: 100% 100%;
+}
+
+@media(max-width: 1300px){
+    .telefonia-container{
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px){
+    .telefonia-container a{
+        margin: 20px;
+    }
+
+    .telefonia-box{
+        width: 280px;
+        height: 380px;
+        font-size: .95rem;
+    }
+}
+
+/* #092229 #db2704 #02007f #333f4f #385799 */

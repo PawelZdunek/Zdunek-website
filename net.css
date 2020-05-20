@@ -1,0 +1,155 @@
+h1{
+    margin: 50px;
+    padding: 15px;
+    font-size: 3.8rem;
+    font-weight: 200;
+    border: 5px solid #ffffff;
+    position: relative;
+    text-align: center;
+}
+
+.span-h1{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+}
+
+.span1{
+    top: calc(0% - 5px);
+    left: calc(0% - 5px);
+    border-top: 5px solid #0971c0;
+    border-left: 5px solid #0971c0;
+}
+
+.span2{
+    bottom: calc(0% - 5px);
+    left: calc(0% - 5px);
+    border-bottom: 5px solid #0971c0;
+    border-left: 5px solid #0971c0;
+}
+
+.span3{
+    top: calc(0% - 5px);
+    right: calc(0% - 5px);
+    border-top: 5px solid #0971c0;
+    border-right: 5px solid #0971c0;
+}
+
+.span4{
+    bottom: calc(0% - 5px);
+    right: calc(0% - 5px);
+    border-bottom: 5px solid #0971c0;
+    border-right: 5px solid #0971c0;
+}    
+
+.internet-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1300px;
+    padding: 60px 0 0px;
+    margin: auto;
+}
+
+.internet-box{
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.internet-box-switch{
+    flex-direction: row-reverse;
+}
+
+.internet-box img{
+    width: 50%;
+    object-fit: cover;
+}
+
+.internet-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 30px;
+    box-shadow: 0px 0px 20px -15px #333333;
+}
+
+.internet-text p{
+    width: 100%;
+    text-align: justify;  
+    font-size: 1.5rem;
+    font-weight: 200;  
+}
+
+.internet-text a{
+    border-radius: 13px;
+}
+
+.e-mail-button{
+    font-size: 1.1rem;
+    border: 0;
+    background-color: #0971c0;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 13px;
+    cursor: pointer;
+    animation: e-mail-button 5s linear infinite;
+    transition: background-color .3s ease;
+}
+
+.e-mail-button:hover{
+    background-color: #053f6b;
+}
+
+@keyframes e-mail-button{
+    19%{
+        transform: translateX(0)  rotate(0deg);
+    }
+    22%{
+        transform: translateX(-4px)  rotate(-2deg);
+    }
+    25%{
+        transform: translateX(4px) rotate(2deg);
+    }
+    31%{
+        transform: translateX(-4px) rotate(-2deg);
+    }
+    37%{
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+
+
+
+
+@media(max-width: 1300px){
+    .internet-container{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1050px){
+    .internet-container{
+        padding-top: 110px;
+    }
+}
+
+@media(max-width: 800px){
+    .internet-container{
+        padding: 110px 0 0px;
+    }
+
+    .internet-box{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .internet-text, .internet-box img{
+        width: 100%;
+    }
+}

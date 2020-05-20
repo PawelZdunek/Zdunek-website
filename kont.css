@@ -1,0 +1,238 @@
+h1{
+    margin: 50px 0;
+    padding: 15px;
+    font-size: 5.3rem;
+    font-weight: 200;
+    border: 5px solid #ffffff;
+    /* border-right: 5px solid #0971c0; */
+    position: relative;
+    text-align: center;
+    background-color: #f7f7f7;
+    width: 100%;
+    color: #333333;
+}
+
+.kontakt-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1300px;
+    padding: 60px 0 50px;
+    margin: auto;
+}
+
+.kontakt-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.kontakt-text h2{
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin: 13px 0;
+}
+
+.kontakt-box{
+    display: flex;
+    height: 700px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.kontakt-text p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #222222;
+    margin: 7px 0;
+    color: #042448;
+}
+
+.kontakt-foto-container{
+    height: 100%;
+    width: 40%;
+    background-image: url(img/sluchawka2.jpg);
+    background-size: 480px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kontakt-circle-container{
+    display: flex;
+    width: 100%;
+    margin: 70px 0 40px;
+}
+
+.kontakt-circle-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.kontakt-circle{
+    width: 250px;
+    height: 250px;
+    margin: 30px 30px 200px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: relative;
+}
+
+.kontakt-circle::after{
+    content: '';
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    width: 2px;
+    height: 150px;
+    background-color: #042448;
+}
+
+.kontakt-circle:hover::after{
+    transition: transform .3s ease;
+    transform: rotate(180deg);
+}
+
+.kontakt-circle-front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 10px solid #f7f7f7;
+    box-shadow: 0px 0px 30px -10px #042448;
+    border-radius: 50%;
+    color: #111111;
+    font-size: 2.5rem;
+    font-weight: 200;
+    transition: transform .3s ease;
+}
+
+.kontakt-circle:hover .kontakt-circle-front{
+    transform: scale(1.15);
+}
+
+.kontakt-circle-box{
+    font-size: 1.15rem;
+    color: #000000;
+}
+
+.kontakt-circle i{
+    margin: 5px;
+    font-size: 4rem;
+    color: #042448;
+}
+
+
+@media(max-width: 1300px){
+
+    .kontakt-container{
+        width: 100%;
+    }
+    h1{
+        margin: 50px 20px;
+    }
+}
+
+@media(max-width: 1050px){
+
+    .kontakt-container{
+        padding-top: 110px;
+    }
+
+    .kontakt-text-container{
+        width: 48%;
+        margin-left: 2%;
+    }
+
+    .kontakt-foto-container{
+        width: 48%;
+    }
+}
+
+@media(max-width: 800px){
+
+    .kontakt-container{
+        padding: 110px 0 0px;
+    }
+
+    .kontakt-box{
+        flex-direction: column;
+        height: auto;
+        align-items: stretch;
+    }
+
+    .kontakt-text-container{
+        width: 100%;
+        padding: 30px;
+        margin: 0;
+    }
+
+    .kontakt-foto-container{
+        height: 550px;
+        width: 100%;
+        background-size: 800px;
+        background-position: center -130px;
+        background-image: url(img/sluchawka2.jpg);
+        /* background-attachment: fixed; */
+    }
+}
+
+@media(max-width: 650px){
+
+    h1{
+        font-size: 3rem;
+        margin: 20px 20px 10px;
+    }
+
+    .kontakt-circle-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .kontakt-circle-box{
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .kontakt-circle{
+        margin: 30px;
+    }
+
+    .kontakt-circle::after{
+        display: none;
+    }
+    
+}    
+
+@media(max-width: 600px){
+
+    .kontakt-foto-container{
+        height: 690px;
+        background-size: 600px;
+        background-position: center -110px;
+    }
+}
+
+@media(max-width: 425px){
+
+    .kontakt-foto-container{
+        height: 490px;
+        background-size: 425px;
+        background-position: center -80px;
+    }
+}
