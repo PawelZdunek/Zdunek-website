@@ -1,2 +1,2 @@
 # Zdunek-website
-Website design for "Zdunek". Which I am an employee of. We deal with telecommunications services, the Internet and building websites.
+Website design for company "Zdunek" with whom I work. Firm deal with telecommunications services, the Internet and building websites.
