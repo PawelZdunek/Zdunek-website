@@ -1,13 +1,28 @@
-function scrollfade()
-{
-	var textfade = document.querySelector('.text-container');
-	var textposition = textfade.getBoundingClientRect().top;
-	var screenPosition = window.innerHeight / 1.6 ;
+const scrollFadeText = () => {
+
+	const textFade = document.querySelector('.text-container');
+	const textPosition = textFade.getBoundingClientRect().top;
+	const screenPosition = window.innerHeight / 1.6 ;
 	
-	if(textposition < screenPosition)
+	if(textPosition < screenPosition)
 	{
-		textfade.classList.add('fade-text');
+		textFade.classList.add('fade-text');
 	}
 }
 
-	window.addEventListener('scroll' ,scrollfade);	
+window.addEventListener('scroll', scrollFadeText);	
+
+
+const scrollFadeImage = () => {
+
+	const textfade = document.querySelector('.picture-container');
+	const textposition = textfade.getBoundingClientRect().top;
+	const screenPosition = window.innerHeight / 1.6 ;
+	
+	if(textposition < screenPosition)
+	{
+		textfade.classList.add('fade-picture');
+	}
+}
+
+window.addEventListener('scroll', scrollFadeImage);
