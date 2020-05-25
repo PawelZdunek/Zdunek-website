@@ -286,25 +286,6 @@ body{
     transition: transform .5s;
 }
 
-.uslugi-container-transform{
-    animation: puls 1s forwards ease;
-}
-
-@keyframes puls {
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(3deg);
-    }
-    75%{
-        transform: rotate(-3deg)
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-
 .uslugi-container a{
     text-decoration: none;
     border-radius: 40px;
